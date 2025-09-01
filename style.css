@@ -1,0 +1,149 @@
+@keyframes box-title {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: box-title 2s ease-in-out;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(to bottom, #00bcd4, #008c8c);
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.box-title {
+  background-color: #00acc1;
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.box-title:hover {
+  filter: brightness(85%);
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin: 0 10px;
+}
+
+.team-member h3 {
+  font-size: 20px;
+  color: #008c8c;
+  margin-top: 10px;
+}
+
+.equipe-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.circular-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #008c8c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.circular-img:hover {
+  transform: scale(1.05);
+}
+
+.projeto {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+}
+
+.projeto:hover {
+  transform: scale(1.05);
+}
+
+.materiais-linha {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+}
+
+.imagem-materiais {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.imagem-materiais:hover {
+  transform: scale(1.05);
+}
+
+.lista-materiais-central {
+  list-style-type: none;
+  text-align: left;
+}
+
+.lista-materiais-central h3 {
+  color: #00acc1;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #008c8c;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
